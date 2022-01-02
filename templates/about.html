@@ -1,0 +1,267 @@
+{% extends 'base.html' %}{% load static %}{% block content %}
+
+<!-- Inner Heading Start -->
+<div class="innerHeading-wrap">
+  <div class="container">
+    <h1>About Us</h1>
+  </div>
+</div>
+<!-- Inner Heading End --> 
+
+<!-- About Start -->
+<div class="about-wrap " id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <div class="aboutImg"><img src="{% static 'images/aboutImg.png' %}" alt=""></div>
+      </div>
+      <div class="col-lg-5">
+        <div class="about_box">
+          <div class="title">
+            <h1>Sri Kamalam Vidyalaya School  <span>Early Learning</span></h1>
+          </div>
+          <p>Vivekananda Vidyalaya Matriculation Hr. Sec. School was started in the year 1981 as a primary school and was ungraded to a matriculation school with the great patronage from the parents. </p>
+          <ul class="edu_list">
+            <li>
+              <div class="learing-wrp">
+                <div class="edu_icon"><img src="{% static 'images/education.png' %}"></div>
+                <div class="learn_info">
+                  <h3>Education</h3>
+                  <p>Higher secondary classes have been started in the year 1998. Tamil Medium for +1 and +2 has started in 2007.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="learing-wrp">
+                <div class="edu_icon"><img src="{% static 'images/academy.png' %}"></div>
+                <div class="learn_info">
+                  <h3>Location</h3>
+                  <p>The school is located in a spacious and peaceful surrounding. </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="learing-wrp">
+                <div class="edu_icon"><img src="{% static 'images/class.png' %}"></div>
+                <div class="learn_info">
+                  <h3>Aesthetic Campus</h3>
+                  <p>The aesthetically designed campus has ultra modern facilities with spacious class rooms, separate labs for Biology, Physics, Chemistry, and Computer with Internet facility and English language lab.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End --> 
+
+<!-- Gallery Start -->
+<div class="gallery-wrap ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="gallery_box">
+          <div class="gallery_left">
+            <div class="title">
+              <h1>Photo Gallery</h1>
+            </div>
+            <p>Ultra modern facilities with spacious class rooms, separate labs for Biology, Physics, Chemistry, and Computer with Internet facility and English language lab.</p>
+            <div class="readmore"><a href="{% url 'ImageGallery' %}">View All Gallery</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="row">
+            {% for i in context.images %}
+          <div class="col-lg-4 col-md-6">
+            <div class="galleryImg"><img src="media/{{ i }}" alt="">
+              <div class="portfolio-overley">
+                <div class="content"> <a href="media/{{ i }}" class="fancybox image-link" data-fancybox="images" title="Image Caption Here"><i class="fas fa-search-plus"></i></a> </div>
+              </div>
+            </div>
+          </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gallery End --> 
+
+<!-- Testimonials Start -->
+<div class="testimonials-wrap ">
+  <div class="container">
+    <div class="title">
+      <p>Testimoinials</p>
+      <h1> What Parents Say </h1>
+    </div>
+    <ul class="owl-carousel testimonials_list unorderList">
+      <li class="item">
+        <div class="testimonials_sec">
+          <div class="client_box">
+            <div class="clientImg"><img alt="" src="{% static 'images/comment-img-1.jpg' %}"></div>
+            <ul class="unorderList starWrp">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur elit. Phasellus porttitor leo id tortor cursus, a gravida sem feugiat. Maecenas nisl libero, lobortis id hendrerit sed, fermentum ut nunc. Duis condimentum tincidunt posuere.</p>
+          <h3>David Malan <span>Aliquam sodales</span></h3>
+          <div class="quote_icon"><i class="fas fa-quote-left"></i></div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="testimonials_sec">
+          <div class="client_box">
+            <div class="clientImg"><img alt="" src="{% static 'images/comment-img-2.jpg' %}"></div>
+            <ul class="unorderList starWrp">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur elit. Phasellus porttitor leo id tortor cursus, a gravida sem feugiat. Maecenas nisl libero, lobortis id hendrerit sed, fermentum ut nunc. Duis condimentum tincidunt posuere. </p>
+          <h3>David Malan <span>Aliquam sodales</span></h3>
+          <div class="quote_icon"><i class="fas fa-quote-left"></i></div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="testimonials_sec">
+          <div class="client_box">
+            <div class="clientImg"><img alt="" src="{% static 'images/comment-img-3.jpg' %}"></div>
+            <ul class="unorderList starWrp">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur elit. Phasellus porttitor leo id tortor cursus, a gravida sem feugiat. Maecenas nisl libero, lobortis id hendrerit sed, fermentum ut nunc. Duis condimentum tincidunt posuere.</p>
+          <h3>David Malan <span>Aliquam sodales</span></h3>
+          <div class="quote_icon"><i class="fas fa-quote-left"></i></div>
+        </div>
+      </li>
+      <li class="item">
+        <div class="testimonials_sec">
+          <div class="client_box">
+            <div class="clientImg"><img alt="" src="{% static 'images/comment-img-1.jpg' %}"></div>
+            <ul class="unorderList starWrp">
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+              <li><i class="fas fa-star"></i></li>
+            </ul>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur elit. Phasellus porttitor leo id tortor cursus, a gravida sem feugiat. Maecenas nisl libero, lobortis id hendrerit sed, fermentum ut nunc. Duis condimentum tincidunt posuere.</p>
+          <h3>David Malan <span>Aliquam sodales</span></h3>
+          <div class="quote_icon"><i class="fas fa-quote-left"></i></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- Testimonials End --> 
+
+<!-- Enroll Start -->
+<div class="choice-wrap enroll-wrap ">
+  <div class="container">
+    <div class="title">
+      <h1>Visit School or Call for Enquiry</h1>
+    </div>
+{#    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at eleifend est. Donec dictum at diam ut finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Class aptent taciti sociosqu ad litora torquent.</p>#}
+    <div class="phonewrp"><img src="{% static 'images/phone_icon.png' %}"><a href="about.html#">+919944779523</a></div>
+  </div>
+</div>
+<!-- Enroll End --> 
+
+<!-- Teacher Start -->
+<section class="teachers-area-three teacher-wrap pt-100 pb-70">
+  <div class="container">
+    <div class="title center_title">
+      <h1>Our Teachers</h1>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-teachers">
+          <div class="teacherImg"> <img src="{% static 'images/teachers01.jpg' %}" alt="Image">
+            <ul class="social-icons list-inline">
+              <!-- social-icons -->
+              <li class="social-facebook"> <a href="about.html#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
+              <li class="social-twitter"> <a href="about.html"><i class="fab fa-twitter" aria-hidden="true"></i></a> </li>
+              <li class="social-linkedin"> <a href="about.html#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a> </li>
+              <li class="social-googleplus"> <a href="about.html#"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
+            </ul>
+          </div>
+          <div class="teachers-content">
+            <h3>Stella Roffin</h3>
+            <div class="designation">Art teacher</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-teachers">
+          <div class="teacherImg"> <img src="{% static 'images/teachers02.jpg' %}" alt="Image">
+            <ul class="social-icons list-inline">
+              <!-- social-icons -->
+              <li class="social-facebook"> <a href="about.html#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
+              <li class="social-twitter"> <a href="about.html"><i class="fab fa-twitter" aria-hidden="true"></i></a> </li>
+              <li class="social-linkedin"> <a href="about.html#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a> </li>
+              <li class="social-googleplus"> <a href="about.html#"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
+            </ul>
+          </div>
+          <div class="teachers-content">
+            <h3>Chris Miller</h3>
+            <div class="designation">Mathematic</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-teachers">
+          <div class="teacherImg"> <img src="{% static 'images/teachers03.jpg'%}" alt="Image">
+            <ul class="social-icons list-inline">
+              <!-- social-icons -->
+              <li class="social-facebook"> <a href="about.html#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
+              <li class="social-twitter"> <a href="about.html"><i class="fab fa-twitter" aria-hidden="true"></i></a> </li>
+              <li class="social-linkedin"> <a href="about.html#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a> </li>
+              <li class="social-googleplus"> <a href="about.html#"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
+            </ul>
+          </div>
+          <div class="teachers-content">
+            <h3>Jesica Matt</h3>
+            <div class="designation">English Teacher</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="single-teachers">
+          <div class="teacherImg"> <img src="{% static 'images/teachers04.jpg' %}" alt="Image">
+            <ul class="social-icons list-inline">
+              <!-- social-icons -->
+              <li class="social-facebook"> <a href="about.html#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a> </li>
+              <li class="social-twitter"> <a href="about.html"><i class="fab fa-twitter" aria-hidden="true"></i></a> </li>
+              <li class="social-linkedin"> <a href="about.html#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a> </li>
+              <li class="social-googleplus"> <a href="about.html#"><i class="fab fa-instagram" aria-hidden="true"></i></a> </li>
+            </ul>
+          </div>
+          <div class="teachers-content">
+            <h3>Lena Bodie</h3>
+            <div class="designation">Science Teacher</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teacher Start -->
+
+{% endblock %}

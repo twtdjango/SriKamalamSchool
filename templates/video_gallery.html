@@ -1,0 +1,42 @@
+{% extends 'base.html' %}{% load static %}{% block content %}
+<!-- Inner Heading Start -->
+<div class="innerHeading-wrap">
+  <div class="container">
+    <h1>Video Gallery</h1>
+  </div>
+</div>
+
+<!-- Video Start -->
+<div class="video-wrap">
+  <div class="container">
+    <div class="title center_title">
+      <h1>Watch Our Video</h1>
+    </div>
+  {% for i in context.videos %}
+    <div class="video">
+      <div class="playbtn"><a data-fancybox="" href="media/{{ i }}"><span></span></a></div>
+    </div>
+  {% endfor %}
+  </div>
+</div>
+<!-- Video End -->
+
+<!-- Js -->
+<script src="{% static '="js/jquery.min.js' %}"></script> 
+<script src="{% static '="js/bootstrap.min.js' %}"></script> 
+<script src="{% static '="js/popper.min.js' %}"></script> 
+<script src="{% static '="rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script> 
+<script src="{% static '="rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script> 
+<!-- Jquery Fancybox --> 
+<script src="{% static '="js/jquery.fancybox.min.js' %}"></script> 
+<!-- Animate js --> 
+<script src="{% static '="js/animate.js' %}"></script> 
+<script>
+  new WOW().init();
+</script> 
+<!-- WOW file --> 
+<script src="{% static '="js/wow.js' %}"></script> 
+<!-- general script file --> 
+<script src="{% static '="js/owl.carousel.js' %}"></script> 
+<script src="{% static '="js/script.js' %}"></script>
+{% endblock %}

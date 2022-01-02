@@ -1,0 +1,395 @@
+{% extends 'base.html' %}{% load static %}{% block content %}
+
+<!-- Inner Heading Start -->
+<div class="innerHeading-wrap">
+  <div class="container">
+    <h1>Teacher Details</h1>
+  </div>
+</div>
+<!-- Inner Heading End -->
+
+<!-- Inner Content Start -->
+<div class="innerContent-wrap">
+  <div class="container">
+
+    <!-- Teachers Start -->
+    <div class="classDetails-wrap">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="teacher_left">
+            <div class="teacher_delImg"> <img src="{% static 'images/faculties.jpg' %}" alt="Image"></div>
+          </div>
+{#          <ul class="social-default ">#}
+{#            <li><a href="teachers-details.html#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>#}
+{#            <li><a href="teachers-details.html#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>#}
+{#            <li><a href="teachers-details.html#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>#}
+{#            <li><a href="teachers-details.html#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>#}
+{#            <li><a href="teachers-details.html#"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>#}
+{#          </ul>#}
+{#          <ul class="teacher-address ">#}
+{#            <li><span><i class="fas fa-home" aria-hidden="true"></i></span>123 Lorem Ispum, Georgia 4567.</li>#}
+{#            <li><span><i class="fas fa-phone-alt" aria-hidden="true"></i></span>(777) 123 4567</li>#}
+{#            <li><span><i class="fas fa-envelope" aria-hidden="true"></i></span>Contact@LabArtisan.com</li>#}
+{#            <li><span><i class="fas fa-globe" aria-hidden="true"></i></span>www.kideskool.com</li>#}
+{#          </ul>#}
+        </div>
+        <div class="col-lg-8">
+          <div class="teacher_del ">
+            <h3>A good teacher teaches, a better teacher explains and the best teacher inspires.</h3>
+{#            <div class="designation">Art teacher</div>#}
+            <p>We have the best and the ablest teachers endowed with profound subject knowledge and gifted with excellent teaching skills to enlighten our students in their subjects. They motivate the students to listen attentively and encourage them to raise questions to gain greater clarity and deeper insight into the subject. They guide the students in their project works and home works and ignite their minds with new concepts and new ideas. They act as their mentors and role models.</p>
+{#            <div class="progress-skill">#}
+{#              <h3>Personal Skills</h3>#}
+{#              <div class="progress-wrap" data-animation-section="progress-line">#}
+{#                <p class="progress-head">Teaching <span>85%</span></p>#}
+{#                <div class="progress-line-wrap">#}
+{#                  <div class="progress-line color-1" data-animation-block="is-vision" data-value="85" style="width: 85%;"></div>#}
+{#                </div>#}
+{#              </div>#}
+{#              <div class="progress-wrap" data-animation-section="progress-line">#}
+{#                <p class="progress-head">Speaking <span>95%</span></p>#}
+{#                <div class="progress-line-wrap">#}
+{#                  <div class="progress-line color-2" data-animation-block="is-vision" data-value="95" style="width: 95%;"></div>#}
+{#                </div>#}
+{#              </div>#}
+{#              <div class="progress-wrap" data-animation-section="progress-line">#}
+{#                <p class="progress-head">Family Support <span>74%</span></p>#}
+{#                <div class="progress-line-wrap">#}
+{#                  <div class="progress-line color-3" data-animation-block="is-vision" data-value="74" style="width: 74%;"></div>#}
+{#                </div>#}
+{#              </div>#}
+{#              <div class="progress-wrap" data-animation-section="progress-line">#}
+{#                <p class="progress-head">Children's Well-being <span>81%</span></p>#}
+{#                <div class="progress-line-wrap">#}
+{#                  <div class="progress-line color-4" data-animation-block="is-vision" data-value="81" style="width: 81%;"></div>#}
+{#                </div>#}
+{#              </div>#}
+{#            </div>#}
+          </div>
+        </div>
+      </div>
+        <div>
+            <table >
+                <thead align="center">
+                <tr>
+                    <th><h5 style="color:orange">Staff name</h5></th>
+                    <th><h5 style="color:orange">Qualification</h5></th>
+                    <th><h5 style="color:orange">Designation</h5></th>
+                </tr>
+                </thead>
+                <tbody align="center">
+                <tr>
+                    <th>L.RAJAN</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>SENIOR PRINCIPAL</th>
+                </tr>
+                <tr>
+                    <th>M.S. DURAI</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PRINCIPAL</th>
+                </tr>
+                <tr>
+                    <th>N. SATHIYAMOORTHI</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>P.V. SELVI</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>S. LAVANYA</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>S. JAYACHITHRA</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>R. SIVAGURUNATHAN</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>NISHA ANANDAN</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>P. DIVYABHARATHI</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>R. KAVITHA</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>J.P. STENY KAMALASEVAN</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>S. PREM KUMAR</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>V. PRIYA</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>COMPUTER INSTRUCTOR</th>
+                </tr>
+                <tr>
+                    <th>N. SIVAKUMAR</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>J. RAJKUMAR</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>V. CHELLACHAMY</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>KAVITHA KAMAL</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>V.ARAVIND KUMAR</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>M. PANEER SELVAM</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>S. PRIYA</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>MARY ANGEL.S</th>
+                    <th>M.Sc., M.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>M. BOOPATHI</th>
+                    <th>M.Sc., M.Ed.,</th>
+                    <th>PGT</th>
+                </tr>
+                <tr>
+                    <th>M. SANKARA NARAYANAN</th>
+                    <th>B.Sc., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>B. ALAUDEEN</th>
+                    <th>M.Sc., M.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>M.G. YUVARAJAN</th>
+                    <th>M.Sc., M.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>M.JAYAPRITHI</th>
+                    <th>B.Sc., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>G. RABIA BASARI</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>P.V. KAMALASELVAN</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>K. SIVA</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>A. ANITHA</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>U. LAVANYA VIJAYAKUMAR</th>
+                    <th>M.A., M.Phill.</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>C. NARENDRA KUMAR</th>
+                    <th>M.Sc., M.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>D. THILAGAVATHY</th>
+                    <th>MSc WITH BED</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>B. GAYATHRI</th>
+                    <th>M.COM., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>B. MANJU PARKAVI</th>
+                    <th>B.LIT., BED</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>L. LYDIA CAROLINE</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>S. PRITTA RANJANI</th>
+                    <th>M.A., M.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>D. MALATHY</th>
+                    <th>B.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>N. YOGESWARI</th>
+                    <th>M.Sc., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>T. SUVETHA</th>
+                    <th>B.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>M. LOGESWARI</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>R. THENMOZHI</th>
+                    <th>B.LIT., BED</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>M. SHAMEEMA</th>
+                    <th>B.Sc., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>S. SUSEELA</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>P. PRIYA</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>M. ARULNATHAN</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>M. VENKATESAN</th>
+                    <th>M.A., B.Ed.,</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>G. KAVITHA</th>
+                    <th>BSc WITH BED</th>
+                    <th>TGT</th>
+                </tr>
+                <tr>
+                    <th>R. PRIYA</th>
+                    <th>B.Sc., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>V. HARIBABU</th>
+                    <th>B.Sc., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>V. VATCHALA</th>
+                    <th>B.B.A., B.Lit.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>S. DHANALAKSHMI</th>
+                    <th>M.A., D.T.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>R. NAGARANI</th>
+                    <th>B.A., D.T.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>S. ANITHA</th>
+                    <th>B.Sc., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>T. THEBORAL</th>
+                    <th>B.A., D.T.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>D. KUMUDHA</th>
+                    <th>M.COM., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>P. ANANTHI</th>
+                    <th>B.Sc., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>S. KIRUTHIKA</th>
+                    <th>B.A., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>M. USHA</th>
+                    <th>B.Sc., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>M. THENMOZHI</th>
+                    <th>B.A., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+                <tr>
+                    <th>K. THABITHAL</th>
+                    <th>B.A., B.Ed.,</th>
+                    <th>SGT</th>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Teachers End -->
+
+  </div>
+</div>
+<!-- Inner Content Start -->
+{% endblock %}

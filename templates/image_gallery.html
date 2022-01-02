@@ -1,0 +1,82 @@
+{% extends 'base.html' %}{% load static %}{% block content %}
+<!-- Inner Heading Start -->
+<div class="innerHeading-wrap">
+  <div class="container">
+    <h1>Image Gallery</h1>
+  </div>
+</div>
+<!-- Inner Heading End --> 
+
+<!-- Inner Content Start -->
+<div class="innerContent-wrap">
+  <div class="container">
+    <div class="gallery-wrap ">
+  <div class="container">
+    <div class="row">
+{#      <div class="col-lg-3">#}
+{#        <div class="gallery_box">#}
+{#          <div class="gallery_left">#}
+{#            <div class="title">#}
+{#              <h1>Photo Gallery</h1>#}
+{#            </div>#}
+{#            <p>Ultra modern facilities with spacious class rooms, separate labs for Biology, Physics, Chemistry, and Computer with Internet facility and English language lab.</p>#}
+{#            <div class="readmore"><a href="{% url 'ImageGallery' %}">View All Gallery</a></div>#}
+{#          </div>#}
+{#        </div>#}
+{#      </div>#}
+      <div class="col-lg-9">
+        <div class="row">
+            {% for i in context.images %}
+          <div class="col-lg-4 col-md-6">
+            <div class="galleryImg"><img src="media/{{ i }}" alt="">
+              <div class="portfolio-overley">
+                <div class="content"> <a href="media/{{ i }}" class="fancybox image-link" data-fancybox="images" title="Image Caption Here"><i class="fas fa-search-plus"></i></a> </div>
+              </div>
+            </div>
+          </div>
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gallery End -->
+
+  </div>
+</div>
+
+<!-- Js -->
+<script src="{% static '="js/jquery.min.js' %}"></script> 
+<script src="{% static '="js/bootstrap.min.js' %}"></script> 
+<script src="{% static '="js/popper.min.js' %}"></script> 
+<script src="{% static '="rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script> 
+<script src="{% static '="rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script> 
+<!-- Jquery Fancybox --> 
+<script src="{% static '="js/jquery.fancybox.min.js' %}"></script> 
+<!-- Animate js --> 
+<script src="{% static '="js/animate.js' %}"></script> 
+<script>
+  new WOW().init();
+</script> 
+<!-- WOW file --> 
+<script src="{% static '="js/wow.js' %}"></script> 
+<!-- general script file --> 
+<script src="{% static '="js/owl.carousel.js' %}"></script> 
+<script src="{% static '="js/script.js' %}"></script>
+{#<script>#}
+{#      function initMap() {#}
+{#        var uluru = {lat: 13.098813, lng: 79.677906};#}
+{#        var map = new google.maps.Map(document.getElementById('map'), {#}
+{#          zoom: 15,#}
+{#          center: uluru#}
+{#        });#}
+{#        var marker = new google.maps.Marker({#}
+{#          position: uluru,#}
+{#          map: map#}
+{#        });#}
+{#      }#}
+{#    </script>#}
+{#    <script async defer#}
+{#    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsb7cuyGO9DbFfvjknL8Ch9Yh1oooNy0M&callback=initMap">#}
+{#    </script>#}
+{% endblock %}

@@ -1,0 +1,182 @@
+{% load static %}
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="{% static 'images/favcon.ico' %}">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link href="{% static 'css/all.css' %}" rel="stylesheet">
+<link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="css/switcher.css"> -->
+<link rel="stylesheet" href="{% static 'rs-plugin/css/settings.css' %}">
+<!-- Jquery Fancybox CSS -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/jquery.fancybox.min.css' %}" media="screen" />
+<link href="{% static 'css/animate.css' %}" rel="stylesheet">
+<link href="{% static 'css/style.css' %}" rel="stylesheet"  id="colors">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<title>Sri Kamalam Vidyalaya</title>
+</head>
+<body>
+
+<!--Header Start-->
+<div class="header-wrap">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-3 col-md-12 navbar-light">
+        <div class="logo"> <a href="{% url 'Home' %}"><img alt="" class="logo-default" src="{% static 'images/logo.png' %}"></a></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="navigation-wrap" id="filters">
+          <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="{% static 'index.html#' %}">Menu</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <button class="close-toggler" type="button" data-toggle="offcanvas"> <span><i class="fas fa-times-circle" aria-hidden="true"></i></span> </button>
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="{% url 'Home' %}">Home <span class="sr-only">(current)</span></a> </li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'About' %}">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'ImageGallery' %}">Gallery</a> <i class="fas fa-caret-down"></i>
+                  <ul class="submenu">
+                    <li><a href="{% url 'ImageGallery' %}">Images</a></li>
+                    <li><a href="{% url 'VideoGallery' %}">Videos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'Teachers' %}">Teachers</a>
+{#                  <ul class="submenu">#}
+{#                    <li><a href="teachers.html">Teachers</a></li>#}
+{#                    <li><a href="">Teachers Details</a></li>#}
+{#                  </ul>#}
+                </li>
+                <li class="nav-item"><a class="nav-link" href="index.html#">Rules</a> <i class="fas fa-caret-down"></i>
+                  <ul class="submenu">
+                    <li><a href="">For Students</a></li>
+                    <li><a href="">A Word to students</a></li>
+                    <li><a href="">For Parents</a></li>
+                    <li><a href="">Application Policy</a></li>
+                    <li><a href="">Uniform</a></li>
+{#                    <li><a href="testimonials.html">Testimonials</a></li>#}
+{#                    <li><a href="typography.html">Typography</a></li>#}
+{#                    <li><a href="404.html">404</a></li>#}
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Circular</a> <i class="fas fa-caret-down"></i>
+{#                  <ul class="submenu">#}
+{#                    <li><a href="blog.html">Blog</a></li>#}
+{#                    <li><a href="blog-grid.html">Blog Grid Sidebar</a></li>#}
+{#                    <li><a href="blog-list.html">Blog List sidebar</a></li>#}
+{#                    <li><a href="blog-details.html">Blog Details</a></li>#}
+{#                  </ul>#}
+                </li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'Application' %}">Application</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'ContactUs' %}">Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+{#      <div class="col-lg-3">#}
+{#        <div class="header_info">#}
+{#          <div class="search"><a href="index.html#"><i class="fas fa-search"></i></a></div>#}
+{#          <div class="loginwrp"><a href="login.html">Login/Register</a></div>#}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Header End-->
+
+{% block content %}
+{% endblock %}
+<!-- Footer Start -->
+<div class="footer-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="footer_logo"><img alt="" class="footer-default" src="{% static 'images/logo.png' %}"></div>
+        <p>
+        “The power of Inspiration”<br>
+        ARISE AWAKE AND STOP NOT TILL THE GOAL IS REACHED
+        </p>
+      </div>
+      <div class="col-lg-2 col-md-3">
+        <h3>Quick links</h3>
+        <ul class="footer-links">
+          <li> <a href="{% url 'Home' %}">Home</a></li>
+          <li> <a href="{% url 'About' %}">About</a></li>
+          <li> <a href="{% url 'ImageGallery' %}">Images</a></li>
+          <li> <a href="{% url 'VideoGallery' %}">Videos</a></li>
+          <li> <a href="{% url 'Teachers' %}">Teachers</a></li>
+          <li> <a href="">Rules</a></li>
+          <li> <a href="">Circular</a></li>
+          <li> <a href="{% url 'Application' %}">Application</a></li>
+          <li> <a href="{% url 'ContactUs' %}">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <h3>Opening Hours</h3>
+        <ul class="unorderList hourswrp">
+          <li>Monday <span>08:00 - 02:00</span></li>
+          <li>Tuesday <span>08:00 - 02:00</span></li>
+          <li>Wednesday <span>08:00 - 02:00</span></li>
+          <li>Thursday <span>08:00 - 02:00</span></li>
+          <li>Friday <span>08:00 - 02:00</span></li>
+          <li>Saturday <span>08:00 - 02:00</span></li>
+          <li>Sunday <span>Closed</span></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="footer_info">
+          <h3>Get in Touch</h3>
+          <ul class="footer-adress">
+            <li class="footer_address"> <i class="fas fa-map-signs"></i>  <span> Sri Kamalam Vidyalaya, Pillaiyar Koil Street, Arakkonam – 631 002</span> </li>
+            <li class="footer_email"> <i class="fas fa-envelope" aria-hidden="true"></i> <span><a href="mailto:kamalamvidyalaya@gmail.com"> kamalamvidyalaya@gmail.com </a></span> </li>
+            <li class="footer_phone"> <i class="fas fa-phone-alt"></i> <span><a href="tel:+919944779523"> +919944779523</a></span> </li>
+          </ul>
+          <div class="social-icons footer_icon">
+            <ul>
+              <li><a href="index.html#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+              <li><a href="index.html#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="index.html#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="index.html#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer End -->
+
+<!--Copyright Start-->
+<div class="footer-bottom text-center">
+  <div class="container">
+    <div class="copyright-text">Copyright © International School System 2020. All Rights Reserved</div>
+  </div>
+</div>
+<!--Copyright End-->
+
+<!-- Js -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'rs-plugin/js/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'rs-plugin/js/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- Jquery Fancybox -->
+<script src="{% static 'js/jquery.fancybox.min.js' %}"></script>
+<!-- Animate js -->
+<script src="{% static 'js/animate.js' %}"></script>
+<script>
+  new WOW().init();
+</script>
+<!-- WOW file -->
+<script src="{% static 'js/wow.js' %}"></script>
+<!-- general script file -->
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
